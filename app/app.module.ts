@@ -4,11 +4,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ProductService } from './services/productservice';
 
 import { ApplicationComponent } from './components/application/application';
+import CarouselComponent from './components/carousel/carousel';
+import NavbarComponent from './components/navbar/navbar';
+import SearchComponent from './components/search/search';
+import ProductItemComponent from './components/product-item/product-item';
+import StarsComponent from './components/stars/stars';
+import FooterComponent from './components/footer/footer';
 
 @NgModule({
     imports: [BrowserModule],
     exports: [],
-    declarations: [ApplicationComponent],
+    declarations: [
+        ApplicationComponent,
+        CarouselComponent,
+        NavbarComponent,
+        SearchComponent,
+        ProductItemComponent,
+        StarsComponent,
+        FooterComponent
+    ],
     providers: [ProductService],
     bootstrap: [ApplicationComponent]
 })
