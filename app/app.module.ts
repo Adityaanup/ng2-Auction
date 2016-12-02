@@ -11,8 +11,13 @@ import ProductItemComponent from './components/product-item/product-item';
 import StarsComponent from './components/stars/stars';
 import FooterComponent from './components/footer/footer';
 
+import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
-    imports: [BrowserModule],
+    imports: [
+        BrowserModule,
+        AppRoutingModule
+    ],
     exports: [],
     declarations: [
         ApplicationComponent,
